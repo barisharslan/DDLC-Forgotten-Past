@@ -23,7 +23,7 @@ label start:
     $ config.allow_skipping = True
 
 
-    call intro_route from _call_intro_route
+    call ch1_intro_route from _call_ch1_intro_route
 
     return
 

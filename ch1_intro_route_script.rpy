@@ -1,4 +1,4 @@
-label intro_route:
+label ch1_intro_route:
     stop music fadeout 2.0
     play music t2
     scene bg residential_day
@@ -58,4 +58,24 @@ label intro_route:
     "Maybe I'll have to check this club out after school."
     "..."
 
-    jump meet_lit_club
+    scene bg corridor
+    with wipeleft_scene
+    
+    "We arrive at school and say goodbye."
+
+    show sayori 1b at t11 zorder 1
+
+    s "Hey [player]."
+    mc "Yea?"
+    s "Can we try to stay in touch more?"
+    s "I’ve really missed you!"
+    mc "Don’t worry Sayori I promise you I’ll make more of an effort to see you."
+
+    hide sayori
+
+    "We split off and head to our classes."
+    "That settles it."
+    "Guess I'm checking out the literature club today."
+    
+
+    jump ch2_meet_lit_club

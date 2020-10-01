@@ -1,39 +1,21 @@
-label meet_lit_club:
+label ch2_meet_lit_club:
     stop music fadeout 2.0
     play music t2
-    scene bg corridor
-    with wipeleft_scene
-
-    "We arrive at school and say goodbye."
-
-    show sayori 1b at t11 zorder 1
-
-    s "Hey [player]."
-    mc "Yea?"
-    s "Can we try to stay in touch more?"
-    s "I’ve really missed you!"
-    mc "Don’t worry Sayori I promise you I’ll make more of an effort to see you."
-
-    hide sayori
-
-    "We split off and head to our classes."
-    "That settles it."
-    "Guess I'm checking out the literature club today."
-    
     scene bg class_day
     with wipeleft_scene
     
     "The final bell rings signaling the end of the day."
-    "I pack up my stuff and make my way to the classroom Sayori mentioned."
+    
     
     scene bg corridor
     with wipeleft_scene
-    
-    "I enter the room, and am greeted by a bunch of people in anime merchandise."
-    
+
+    "I pack up my stuff and make my way to the classroom Sayori mentioned."
+
     scene bg class_day
     with wipeleft_scene
     
+    "I enter the room, and am greeted by a bunch of people in anime merchandise."
     "I consider staying here with my people but eventually apologize and leave the room."
     
     scene bg corridor
@@ -97,14 +79,26 @@ label meet_lit_club:
     "She’s a short girl with pink hair with half of it in pigtails."
     "It's a very cute style."
 
+    define g1 = Character('Girl 1', color="#c8ffc8")
+    define g2 = Character('Girl 2', color="#c8ffc8")
+
+    show natsuki 1f
+    g1 "A boy? That’ll ruin the atmosphere of the club!"
     hide natsuki
 
-    Girl 1 "A boy? That’ll ruin the atmosphere of the club!"
-    Girl 2 "Natsuki that's rather rude. I for one am glad to have a new member."
-    Girl 1 "Hmp I don't think it's rude Yuri. I'm just saying how it is."
+    show yuri 1f at t11 zorder 1
+    g2 "Natsuki that's rather rude. I for one am glad to have a new member."
+    hide yuri
 
+    show natsuki 1y at t11 zorder 1
+    g1 "Hmp I don't think it's rude Yuri. I'm just saying how it is."
+    hide natsuki
+
+    show natsuki 1a at t31 zorder 1
+    show yuri 1a at t33 zorder 2
     "So as far as I can tell, the short girl is Natsuki and the tall girl is Yuri."
 
+    show monika 1a at t32 zorder 3
     m "Guys, lets not scare away a potential new member."
 
     "Monika smiles at me."
